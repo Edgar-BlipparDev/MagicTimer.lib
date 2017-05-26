@@ -3,17 +3,73 @@
 ## Synopsis
 Blippar JS extension timer Library that has countdown-timer, stopwatch-timer and allows to get server time, including year, month and date.
 
-###### Usage
+## Usage
 ```JavaScript
 var scene = blipp.addScene('default');
-   require('./TimerLib.js');```
-   
-#Initialization 
- To intilise countDown Timer 
-```scene.countDown = _CountDownTimer(scene.countDownTimer, true, _CountDowtimercallback, true);```
+   require('./TimerLib.js');
+```  
+## Initialization
 
-After Text node has been created minutes and seconds can be set.
+###### Description
+Idealy you would want to initialise after you have created a text node since you will need to pass it into Coundown Timer or StopWatch timer. Server timer doesnt rely on models all it needs is callback function.
 
+ To initialise countDown Timer:
+```
+    scene.countDown = _CountDownTimer(scene.countDownTimer, true, _CountDowtimercallback, true);
+```
+To initialise stopWatch Timer:
+```
+    scene.stopWatch = _StopWatchTimer(scene.startTimeText, true, true, true, "", "", "", true);
+```
+To initialise server Timer:
+```
+    scene.serverTimeInit = _ServerTime(_ServerTimeCallBack, countryID);
+```
+
+## CountDown Timer Commands
+
+Sets the minutes for countdown timer to count down:
+```
+    scene.countDown.setMinutes(2);
+```
+Sets the seconds for countdown timer to count down:
+```
+    scene.countDown.setSeconds(9);
+```
+Gets the current Minutes:
+```
+    scene.countDown.getMinutes();
+```
+Gets the current Seconds:
+```
+    scene.countDown.getSeconds();
+```
+Starts the timer:
+```
+   scene.countDown.startTimer();
+```
+Stops the timer:
+```
+   scene.countDown.stopTimer();
+```
+## StopWatch Timer Commands
+
+Starts the stop watch:
+```
+  scene.stopWatch.startStopWatch();
+```
+Resets the stopwatch:
+```
+  scene.stopWatch.resetStopWatch();
+
+```
+Pauses the stop watch
+```
+  scene.stopWatch.pauseStopWatch();
+```
+
+
+To get Server Timer
 ``` scene.countDown.setMinutes(2);
     scene.countDown.setSeconds(9);```
     
@@ -22,12 +78,6 @@ After Text node has been created minutes and seconds can be set.
  
  To stop the timer use:
  '''scene.countDown.stopTimer();'''
- 
- Note 
-
-The `node` shown above can be either a string `"scene"`,`"screen"` or the model/node to use as a spwan point for the models. The spawn point will follow movement and rotations applied to that node/model.
-
-The `particleParameterData` is a data struc which defines the variables used by the particle system (see detail in docs folder)
 
 # Current Limitation
 
