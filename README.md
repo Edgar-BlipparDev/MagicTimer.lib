@@ -13,7 +13,7 @@ var scene = blipp.addScene('default');
 ###### Description
 Idealy you would want to initialise after you have created a text node since you will need to pass it into Coundown Timer or StopWatch timer. Server timer doesnt rely on models all it needs is callback function.
 
- To initialise countdown timer.\\
+ To initialise countdown timer.<br>
  Eaxample:
 ```JavaScript
     scene.countDown = _CountDownTimer(scene.countDownTimer, true, _CountDowtimercallback, true);
