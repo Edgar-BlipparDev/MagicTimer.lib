@@ -54,7 +54,7 @@ _CountDownTimerExample = function () {
     scene.countDown.setMinutes(2);
     scene.countDown.setSeconds(9);
 
-    scene.startTimerBtn = scene.getScreen().addSprite().setName("startCountdown").setTranslation(-300, 400, 0).setScale(sH * 150 / 1024, sH * 100 / 1024, 1).setClickable(true).setAlpha(1).setHidden(false);
+    scene.startTimerBtn = scene.getScreen().addSprite().setName("startCountdown").setTranslation(-400, 400, 0).setScale(sH * 150 / 1024, sH * 100 / 1024, 1).setClickable(true).setAlpha(1).setHidden(false);
     scene.startTimerBtn.addText('start').setColor('000000');
     scene.startTimerBtn.on('touchEnd', function (id, x, y) {
         //initiate countDownTimer
@@ -67,7 +67,7 @@ _CountDownTimerExample = function () {
 
     });
 
-    scene.stopBtn = scene.getScreen().addSprite().setName("stopTimer").setTranslation(300, 400, 0).setScale(sH * 150 / 1024, sH * 100 / 1024, 1).setClickable(true).setAlpha(1).setHidden(false);
+    scene.stopBtn = scene.getScreen().addSprite().setName("stopTimer").setTranslation(400, 400, 0).setScale(sH * 150 / 1024, sH * 100 / 1024, 1).setClickable(true).setAlpha(1).setHidden(false);
     scene.stopBtn.addText('Stop').setColor('000000');
 
     scene.stopBtn.on('touchEnd', function (id, x, y) {
@@ -92,7 +92,7 @@ _StopWatchExample = function () {
         .setHeight(sH * 523 / 2048)
         .setRotation(0, 0, 0)
         .setFontSize(100 * sH / 2048 << 0)
-        .setText(" StopWatch ")
+        .setText("StopWatch")
         .setTextHAlign('center')
         .setTranslation(0, 0, 0)
         .setColor('#01cef3')
@@ -111,7 +111,7 @@ _StopWatchExample = function () {
     scene.stopWatch.setSeconds(40);
     scene.stopWatch.setHours(0);
 
-    scene.startTimerBtn = scene.getScreen().addSprite().setName("startCountdown").setTranslation(-200, 400, 0).setScale(sH * 150 / 1024, sH * 100 / 1024, 1).setClickable(true).setAlpha(1).setHidden(false);
+    scene.startTimerBtn = scene.getScreen().addSprite().setName("startCountdown").setTranslation(-400, 400, 0).setScale(sH * 150 / 1024, sH * 100 / 1024, 1).setClickable(true).setAlpha(1).setHidden(false);
     scene.startTimerBtn.addText('start').setColor('000000');
     scene.startTimerBtn.on('touchEnd', function (id, x, y) {
         //starts the stopwatch
@@ -125,7 +125,7 @@ _StopWatchExample = function () {
         scene.stopWatch.pauseStopWatch();
     });
 
-    scene.stopBtn = scene.getScreen().addSprite().setName("stopTimer").setTranslation(200, 400, 0).setScale(sH * 150 / 1024, sH * 100 / 1024, 1).setClickable(true).setAlpha(1).setHidden(false);
+    scene.stopBtn = scene.getScreen().addSprite().setName("stopTimer").setTranslation(400, 400, 0).setScale(sH * 150 / 1024, sH * 100 / 1024, 1).setClickable(true).setAlpha(1).setHidden(false);
     scene.stopBtn.addText('Stop').setColor('000000');
     scene.stopBtn.on('touchEnd', function (id, x, y) {
         //stops the stop watch if startStopWatch called again it will start counting from 0 unless it is overriden
