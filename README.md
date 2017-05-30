@@ -83,7 +83,6 @@ scene.stopWatch.getSeconds();
 ```JavaScript
 scene.stopWatch.setMinutes(59);
 ```
-<br>
 **Overrides stopwatch start seconds.**<br>
 *Example:*
 ```JavaScript
