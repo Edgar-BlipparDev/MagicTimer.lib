@@ -108,21 +108,16 @@ scene.stopWatch.resetStopWatch();
 ```JavaScript
 scene.stopWatch.pauseStopWatch();
 ```
-<br>
-
 
 ## Server Time Callback
 
-EveryTime Server Time is called
+Once server time has been intilised callback function should return time parameters and date.
 
 *Example:*
 ```Javascript
 _ServerTimeCallBack = function (hours, minutes, seconds, year, month, day) {};
 
 ```
-
-# Current Limitation
-
 
 # Motivation
 
