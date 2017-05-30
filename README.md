@@ -145,7 +145,7 @@ To get Server Timer
 
 # Motivation
 
-Wanted to have quick timmer I could just plug in and use.
+Wanted to have quick timmer I could just plug in and use..
 
 ### Author
 [Jeff Kershaw]
