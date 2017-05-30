@@ -128,8 +128,7 @@ scene.stopWatch.pauseStopWatch();
 _ServerTimeCallBack = function (hours, minutes, seconds, year, month, day) {};
 
 ```
-
-# Motivation
+## Motivation
 
 Wanted to have quick timer I could just plug in and use as well as have flexability of setting and getting time when needed.
 
