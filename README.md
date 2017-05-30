@@ -18,7 +18,6 @@ Ideally you would want to initialize after you have created a text node since yo
 ```JavaScript
     scene.countDown = _CountDownTimer(scene.countDownTimer, true, _CountDowtimercallback, true);
 ```
-<br>
 To initialise stopwatch timer.<br><br>
 **Example:**
 ```JavaScript
@@ -145,7 +144,7 @@ To get Server Timer
 
 # Motivation
 
-Wanted to have quick timmer I could just plug in and use..
+Wanted to have quick timmer I could just plug in and use.
 
 ### Author
 [Jeff Kershaw]
