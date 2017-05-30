@@ -18,17 +18,27 @@ Ideally you would want to initialize after you have created a text node since yo
 ```JavaScript
     scene.countDown = _CountDownTimer(scene.countDownTimer, true, _CountDowtimercallback, true);
 ```
-**To initialise stopwatch timer.**<br>
+*Params*: <br>
+_CountDownTimer(textNodeModel, showMinutes, callback, enableDebugLogInfo);
+<br><br>
+
+**To initialise stopwatch timer.**
 *Example:*
 ```JavaScript
     scene.stopWatch = _StopWatchTimer(scene.startTimeText, true, true, true, "", "", "", true);
 ```
+*Params*:<br>
+_StopWatchTimer(textNodeModel, showHours, showMinutes, showSeconds, hoursToStop, minutesToStop, secondsToStop, enableDebugLog);
+<br><br>
+
 **To initialise servertimer.** Note countryID is based on php.net timezones http://php.net/manual/en/timezones.europe.php<br>
 *Example:*
 ```JavaScript
     var countryID = "Europe/London";
     scene.serverTimeInit = _ServerTime(_ServerTimeCallBack, countryID);
 ```
+*Params*: <br>
+_ServerTime(callback, timezone);
 ## CountDown Timer Commands
 
 **Sets the minutes for countdown timer to count down.**<br>
