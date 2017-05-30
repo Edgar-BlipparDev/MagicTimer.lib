@@ -111,7 +111,7 @@ scene.stopWatch.pauseStopWatch();
 
 ## Server Time Callback
 
-Once server time has been intilized callback function should return time parameters and date.
+**Once server time has been intilized callback function should return time parameters and date.**
 
 *Example:*
 ```Javascript
