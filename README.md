@@ -1,7 +1,7 @@
 # MagicTimer.lib
 
 ## Synopsis
-Blippar JS extension timer Library that has countdown-timer, stopwatch-timer and allows to get server time, including year, month and date.
+Blippar JS extension timer Library that has countdown-timer, stopwatch-timer and allows to get server time, including year, month and date. Example of usage added in main.js.
 
 ## Usage
 ```JavaScript
@@ -111,7 +111,7 @@ scene.stopWatch.pauseStopWatch();
 
 ## Server Time Callback
 
-Once server time has been intilised callback function should return time parameters and date.
+Once server time has been intilized callback function should return time parameters and date.
 
 *Example:*
 ```Javascript
@@ -121,7 +121,7 @@ _ServerTimeCallBack = function (hours, minutes, seconds, year, month, day) {};
 
 # Motivation
 
-Wanted to have quick timer I could just plug in and use.
+Wanted to have quick timer I could just plug in and use as well as have flexability of setting and getting time when needed.
 
 ### Author
 [Edgars Adamovics]
