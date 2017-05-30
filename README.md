@@ -28,14 +28,14 @@ _CountDownTimer(textNodeModel, showMinutes, callback, enableDebugLogInfo);
     scene.stopWatch = _StopWatchTimer(scene.startTimeText, true, true, true, "", "", "", true);
 ```
 *Params*:<br>
-_StopWatchTimer(textNodeModel, showHours, showMinutes, showSeconds, hoursToStop, minutesToStop, secondsToStop, enableDebugLog);
+_StopWatchTimer(textNodeModel, showHours, showMinutes, showSeconds, hoursToStop, minutesToStop, secondsToStop, enableDebugLogInfo);
 <br><br>
 
-**To initialise servertimer.** Note countryID is based on php.net timezones http://php.net/manual/en/timezones.europe.php<br>
+**To call for servertime.** Note countryID is based on php.net timezones http://php.net/manual/en/timezones.europe.php<br>
 *Example:*
 ```JavaScript
     var countryID = "Europe/London";
-    scene.serverTimeInit = _ServerTime(_ServerTimeCallBack, countryID);
+   _ServerTime(_ServerTimeCallBack, countryID);
 ```
 *Params*: <br>
 _ServerTime(callback, timezone);
