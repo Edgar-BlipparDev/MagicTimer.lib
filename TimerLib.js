@@ -116,7 +116,7 @@ _CountDownTimer = function (obj, displayMinutes, callback, enableLog) {
                         timerPresets.onTimeEnd(callback);
                     }
                 }
-            }
+            };
             objectHolder.timer();
         } else {
             console.log("ERROR " + " : Please Set Minutes and Set Seconds");
@@ -129,7 +129,7 @@ _CountDownTimer = function (obj, displayMinutes, callback, enableLog) {
 
     return objectHolder;
 
-}
+};
  exports._CountDownTimer = _CountDownTimer;
 
 //StopWatch Timer
@@ -295,4 +295,4 @@ function errorHandler(lineNo) {
     if (errorNo == 102) {
         console.log("ERROR at line " + lineNo + " :Please make sure you set correct boolean values");
     }
-};
+}
