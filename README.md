@@ -22,7 +22,7 @@ Ideally you would want to initialize after you have created a text node since yo
 _CountDownTimer(textNodeModel, showMinutes, callback, enableDebugLogInfo);
 <br><br>
 
-**To initialise stopwatch timer.**
+**To initialise stopwatch timer.**<br>
 *Example:*
 ```JavaScript
     scene.stopWatch = _StopWatchTimer(scene.startTimeText, true, true, true, "", "", "", true);
