@@ -47,7 +47,7 @@ _CountDownTimerExample = function () {
         .setHidden(false)
         .setClickable(false);
 
-    scene.countDown = _CountDownTimer(scene.countDownTimer, true, _CountDowtimerFinish, true);
+    scene.countDown = _CountDownTimer(scene.countDownTimer, true, _CountDowtimercallback, true);
 
 
     //Set The Minutes and set the secodns
@@ -80,7 +80,7 @@ _CountDownTimerExample = function () {
 
 
 };
-_CountDowtimerFinish = function () {
+_CountDowtimercallback = function () {
     console.log("====FINISHED DO SOMETHING====");
 };
 //=============================================StopWatch Example ==================================================
@@ -111,6 +111,10 @@ _StopWatchExample = function () {
     scene.stopWatch.setSeconds(40);
     scene.stopWatch.setHours(0);
 
+    scene.stopWatch.getMinutes();
+    scene.stopWatch.getSeconds();
+    scene.stopWatch.getHours();
+
     scene.startTimerBtn = scene.getScreen().addSprite().setName("startCountdown").setTranslation(-200, 400, 0).setScale(sH * 150 / 1024, sH * 100 / 1024, 1).setClickable(true).setAlpha(1).setHidden(false);
     scene.startTimerBtn.addText('start').setColor('000000');
     scene.startTimerBtn.on('touchEnd', function (id, x, y) {
@@ -128,6 +132,7 @@ _StopWatchExample = function () {
     scene.stopBtn = scene.getScreen().addSprite().setName("stopTimer").setTranslation(200, 400, 0).setScale(sH * 150 / 1024, sH * 100 / 1024, 1).setClickable(true).setAlpha(1).setHidden(false);
     scene.stopBtn.addText('Stop').setColor('000000');
     scene.stopBtn.on('touchEnd', function (id, x, y) {
+        scene.stopWatch.resetStopWatch();
         //stops the stop watch if startStopWatch called again it will start counting from 0 unless it is overriden
         console.log("Minutes " + scene.countDown.getMinutes());
         console.log("Seconds " + scene.countDown.getSeconds());
