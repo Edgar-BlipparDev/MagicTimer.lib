@@ -25,6 +25,24 @@ scene.onShow = function () {
     //_CountDownTimerExample();
     _StopWatchExample();
     //_ServerTimerExample();
+
+    
+    scene.textNode = scene.getScreen().addText()
+        .setWidth(sH * 800 / 2048)
+        .setHeight(sH * 523 / 2048)
+        .setRotation(0, 0, 0)
+        .setFontSize(100 * sH / 2048 << 0)
+        .setText(" ServerTime ")
+        .setTextHAlign('center')
+        .setTranslation(0, 0, 0)
+        .setColor('#01cef3')
+        .setSides('both')
+        .setType('aura')
+        .setAlpha(1)
+        .setHidden(false)
+        .setClickable(false);
+
+    console.log(builderpattern().withHours(true).build(scene.textNode));
 };
 
 
@@ -140,7 +158,7 @@ _StopWatchExample = function () {
 
 //=============================================Server Time ==================================================
 _ServerTimerExample = function () {
-       // List of all available countries 
+    // List of all available countries 
     //http://php.net/manual/en/timezones.europe.php
     //
     var countryID = "Europe/London";
@@ -160,7 +178,7 @@ _ServerTimerExample = function () {
         .setClickable(false);
 
     scene.serverTimeInit = _ServerTime(_ServerTimeCallBack, countryID);
-    
+
 
 };
 
@@ -170,12 +188,4 @@ _ServerTimeCallBack = function (hours, minutes, seconds, year, month, day) {
 
 
 };
-
-
-
-
-
-
-
-
 
